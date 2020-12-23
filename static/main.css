@@ -1,0 +1,14 @@
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+}
+h1{
+    align-flex:center;}
+
+table, th, td{
+    border:1px solid black;
+    border-collapse:collapse;
+}

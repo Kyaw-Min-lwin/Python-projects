@@ -1,0 +1,25 @@
+{% extends 'layout.html'%}
+{% block title%}Home{% endblock title%}
+{% block body%}
+    <h1>Task Master</h1>
+    {% if result %}
+        <table>
+            <tr>
+                <th>Id</th>
+                <th> Tasks</th>
+                <th>Date Inserted</th>
+            </tr>
+            {% for x in result %}
+                <tr>
+                    <td>{{x[0]}}</td>
+                    <td>{{x[1]}}</td>
+                    <td>{{ x[2] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+    <form action="#" method="post">
+        <p><input type="text" name="todo"></p>
+        <p><input type="submit"></p>
+    </form>
+{% endblock body%}
